@@ -14,8 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Italiana&family=Italianno&family=Lugrasimo&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-
 </head>
 
 <body>
@@ -35,20 +33,6 @@
                 <a href="#galerie">Galerie</a>
             </li>
         </ul>
-        <!-- <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#infos">Infos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reponse">Réponse</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#galerie" tabindex="-1" aria-disabled="true">Galerie</a>
-            </li>
-          </ul> -->
     </nav>
 
     <header>
@@ -68,40 +52,43 @@
         <section id="infos">
             <h2>Informations sur le mariage</h2>
             <h3>Programme de la journée</h3>
-                <!-- <ul>
-                    <li>15h : Mairie de l'Isle-d'abeau
-                        <p>12 rue de l'Hôtel de Ville, 38080 L'Isle-d'Abeau</p>
-                    </li>
-                    <li>16h30 : Cérémonie Laïque
-                        <p>Direction Le Recept'</p>
-                    </li>
-                    <li>18h : Vin d'honneur suivi de la soirée</li>
-                    <li>Dimanche 6 octobre, à partir de 11h : Brunch au Recept pour ceux qui viennent de loin et ceux qui veulent prolonger le plaisir d'être ensemble !</li>
-                </ul> -->
-                
-                <div class="timeline">
-                    <div class="event">
-                        <div class="time">15h</div>
-                        <div class="description">Mairie de L'Isle-d'Abeau</div>
+            <div class="timeline">
+                <div class="event">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-heart"></i> 
                     </div>
-                    <div class="event">
-                        <div class="time">16h30</div>
-                        <div class="description">Cérémonie laïque au Recept'</div>
-                    </div>
-                    <div class="event">
-                        <div class="time">18h30</div>
-                        <div class="description">Vin d'honneur</div>
-                    </div>
-                    <div class="event">
-                        <div class="time">21h</div>
-                        <div class="description">Repas et début des festivités</div>
-                    </div>
-                    <div class="event">
-                        <div class="time">Dimanche 06 octobre dès 11h</div>
-                        <div class="description">Brunch pour ceux qui veulent profiter encore un peu</div>
-                    </div>
+                    <p class="time">15h</p>
+                    <h4 class="description">Mairie de L'Isle-d'Abeau</h4>
                 </div>
-                
+                <div class="event">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-dove"></i> 
+                    </div>
+                    <div class="time">16h30</div>
+                    <div class="description">Cérémonie laïque au Recept'</div>
+                </div>
+                <div class="event">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-wine-glass-empty"></i>
+                    </div>
+                    <div class="time">18h30</div>
+                    <div class="description">Vin d'honneur</div>
+                </div>
+                <div class="event">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="time">21h</div>
+                    <div class="description">Repas et début des festivités</div>
+                </div>
+                <div class="event">
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                    </div>
+                    <div class="time">Dimanche 06 octobre dès 11h</div>
+                    <div class="description">Brunch pour ceux qui veulent profiter encore un peu</div>
+                </div>
+            </div>
             <div class="lieu">
                 <i class="fas fa-map-marker-alt"></i>
                 <h4>Localisation de la mairie :</h4>
@@ -116,22 +103,37 @@
 
         <section id="reponse">
             <h2>Réponse</h2>
-                <h3>Coordonnées</h3>
-                    <p id="accroche">Confirmez-nous votre présence en indiquant le nombre d'enfants présents</p>
-                    <div class="contact-info">
-                        <div class="icon">
-                            <i class="fas fa-envelope"></i>
-                            <h4>Email :</h4>
-                        </div>
-                        <p class="contact-text">
-                            <a href="mailto:sabrina355@hotmail.fr">Sabrina</a>
-                        </p>
-                    </div>
+            <form action="mailto:sabrina355@hotmail.fr" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom">
+                </div>
+                <div class="form-group">
+                    <label for="enfants">Nombre d'enfants présents :</label>
+                    <input type="number" id="enfants" name="enfants">
+                </div>
+                <div class="form-group">
+                    <label for="age">Âge des enfants</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div class="form-group">
+                    <label for="dimanche">Présence le dimanche :</label>
+                    <input type="checkbox" id="dimanche" name="dimanche">
+                </div>
+                <button type="submit" class="cta">Envoyer</button>
+            </form>
         </section>
 
         <section id="galerie">
             <h2>Galerie</h2>
-            <!-- Ajoutez votre galerie de photos ici -->
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="file">
+                <button type="submit">Télécharger</button>
+            </form>
         </section>
     </div>
 

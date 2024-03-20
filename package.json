@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.0",
     "loader-utils": "^3.2.1"
   }
 }

@@ -21,3 +21,22 @@ const activeBtn = document.querySelector(".active-btn");
 if (activeBtn) {
     activeBtn.classList.remove("active-btn");
 }
+
+
+// utilisation du middleware
+
+const express = require('express');
+const basicAuth = require('./middlewares/basicAuth');
+const config = require('./config');
+
+const app = express();
+const port = 3000;
+
+// Route protégée
+app.get('/protected', basicAuth, (req, res) => {
+    res.send('Content protected by password');
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
