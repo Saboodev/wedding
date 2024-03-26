@@ -27,6 +27,18 @@ body {
     width: 100vw; /* La largeur de la page est égale à 100% de la largeur de la fenêtre du navigateur */
 }
 
+#logo{
+    text-align: center;
+}
+
+#logo img {
+    width: 150px; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour conserver le ratio */ 
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
 .global-toggler {
     display: none;
 }
@@ -40,12 +52,10 @@ nav {
     text-align: center;
     /* background-color: rgba(255, 255, 255, 0.5); Ajoutez une couleur de fond semi-transparente pour le menu */
     padding: 0;
-    margin-top: 8rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-left: 0;
-    margin-bottom: 0;
+    justify-content: center;
+    margin-top: 5rem;
     list-style: none;
 }
 
@@ -57,7 +67,6 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 nav ul li a {
@@ -105,6 +114,19 @@ header {
     align-items: center; /* Centrer horizontalement */
 }
 
+/* Centrer et redimensionner le texte dans la section */
+section h2, section p {
+    font-size: 1.5rem; /* Taille de police */
+    margin-bottom: 20px; /* Marge en bas */
+}
+
+/* Centrer et redimensionner le formulaire */
+form {
+    max-width: 400px; /* Largeur maximale */
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+
 h1 {
     font-size: 40px;
 }
@@ -127,6 +149,9 @@ h1 {
     color: var(--text-primary-color);
 }
 
+#info {
+    margin-bottom: 4rem;
+}
 
 section {
     padding: 60px 20px;
@@ -137,6 +162,13 @@ section {
 .btn-contact {
     display: flex;
     justify-content: center;
+}
+
+.btn, .main-btn {
+    padding: 10px 20px; /* Espacement du texte */
+    font-size: 1.2rem; /* Taille de police */
+    display: inline-block; /* Affichage en ligne */
+    margin: 10px; /* Marge autour du bouton */
 }
 
 .cta {
@@ -276,14 +308,16 @@ input, textarea {
       }
 }
 
-#galerie{
+#galerie, #hebergement{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(75, 88, 58, 0.3); 
+        background-color: rgba(75, 88, 58, 0.45); 
         padding: 20px; 
         border-radius: 10px; 
-        
+        font-family: "Italiana", cursive;
+        font-size: 1.1rem;
+        font-weight: 600;   
 }
 
 #file{
@@ -378,4 +412,60 @@ footer {
             font-weight: 600;
             font-size: 20px;
             }
+}
+
+/* Media Queries pour rendre le site réactif */
+
+/* Pour les appareils de taille moyenne */
+@media screen and (max-width: 768px) {
+    /* Centrer et redimensionner le texte dans la section */
+    section h2, section p {
+        font-size: 1.2rem; /* Taille de police */
+    }
+  
+    /* Centrer et redimensionner le formulaire */
+    form {
+        max-width: 300px; /* Largeur maximale */
+    }
+  
+    /* Centrer et redimensionner les boutons */
+    .btn, .main-btn {
+        font-size: 1rem; /* Taille de police */
+        padding: 8px 16px; /* Espacement du texte */
+        margin: 5px; /* Marge autour du bouton */
+    }
+
+    nav{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-primary);
+        .nav{
+            margin: 1rem .3rem;
+        }
+    }
+}
+
+/* Pour les appareils de petite taille */
+@media screen and (max-width: 480px) {
+    /* Centrer et redimensionner le texte dans la section */
+    section h2, section p {
+        font-size: 1rem; /* Taille de police */
+    }
+  
+    /* Centrer et redimensionner le formulaire */
+    form {
+        max-width: 250px; /* Largeur maximale */
+    }
+  
+    /* Centrer et redimensionner les boutons */
+    .btn, .main-btn {
+        font-size: 0.8rem; /* Taille de police */
+        padding: 6px 12px; /* Espacement du texte */
+        margin: 3px; /* Marge autour du bouton */
+    }
 }
