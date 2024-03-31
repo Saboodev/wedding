@@ -144,6 +144,18 @@ h1 {
     margin-bottom: 4rem;
 }
 
+/* Limiter la largeur du texte dans la section Infos */
+#infos {
+    margin: 0 auto; /* Centrer la section */
+    max-width: 80%; /* Limiter la largeur de la section */
+}
+
+#infos .event {
+    max-width: 100%; /* Limiter la largeur des paragraphes à 100% de la largeur de la section */
+    margin: 0 auto; /* Centrer les paragraphes */
+}
+
+
 section {
     padding: 60px 20px;
     border-radius: 10px;
@@ -213,15 +225,6 @@ section {
         border-radius: 5px;
         color: black;
         font-weight: 600;
-    }
-}
-
-/* Media query pour rendre le timeline responsive */
-@media screen and (max-width: 768px) {
-    .time {
-        width: auto;
-        text-align: left;
-        margin-right: 0;
     }
 }
 
@@ -333,13 +336,6 @@ footer {
     }
 }
 
-/* // Tablette */
-@media screen and (max-width:970px){
-    nav{
-        display: none;
-    }
-}
-
 /* Media Queries pour rendre le site réactif */
 
 /* Pour les appareils de taille moyenne */
@@ -359,6 +355,13 @@ footer {
         font-size: 1rem; /* Taille de police */
         padding: 8px 16px; /* Espacement du texte */
         margin: 5px; /* Marge autour du bouton */
+    }
+
+    /* Media query pour rendre le timeline responsive */
+    .time {
+        width: auto;
+        text-align: left;
+        margin-right: 0;
     }
 }
 
