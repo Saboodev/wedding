@@ -39,6 +39,8 @@ body {
     justify-content: center; /* Centrez le contenu horizontalement */
     align-items: center; /* Centrez le contenu verticalement */
     z-index: 9999;   
+    padding: 0 20px; /* Ajoutez un peu d'espace sur les côtés pour les écrans plus petits */
+    box-sizing: border-box; 
     input {
         width: 30%;
     }
@@ -54,8 +56,16 @@ body {
         padding: .8rem 1.1rem;
         border: none;
         resize: none;
+        padding: 10px;
     }
 }
+
+
+/* #password input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+} */
 
 #logo{
     text-align: center;
@@ -384,10 +394,12 @@ footer {
 /* Pour les appareils de taille moyenne */
 @media screen and (max-width: 768px) {
     #password {
-        padding: 0 10px; /* Réduisez l'espace sur les côtés pour les écrans encore plus petits */
+        padding: 0 10px; 
         background: url("/img/page-acces-tel.png");
-
+        flex-direction: column;
+        background-size: auto; /* Utilisez la taille d'arrière-plan par défaut */
     }
+
     /* Masquer le menu de navigation par défaut */
     nav {
         display: none;
@@ -469,6 +481,9 @@ footer {
 
 /* Pour les appareils de petite taille */
 @media screen and (max-width: 480px) {
+    #password {
+        padding: 10px; /* Réduisez le rembourrage pour les petits écrans */
+    }
     /* Centrer et redimensionner le texte dans la section */
     section h2, section p {
         font-size: 1rem; /* Taille de police */
