@@ -395,7 +395,7 @@ footer {
 @media screen and (max-width: 768px) {
     #password {
         padding: 0 10px; 
-        background: url("../img/page-acces-tel.png");
+        /* background: url("../img/page-acces-tel.png"); */
         flex-direction: column;
         background-size: auto; /* Utilisez la taille d'arrière-plan par défaut */
     }
