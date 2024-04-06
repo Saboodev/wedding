@@ -19,12 +19,13 @@
 </head>
 
 <body>
-    <div id="password">
-        <h2>Accès protégé par mot de passe</h2>
-        <input type="password" id="passwordInput" placeholder="Entrez le mot de passe">
-        <button onclick="checkPassword()">Entrer</button>
-        <p id="passwordMessage"></p>
-    </div>
+    <!-- Ajoutez cette section dans votre index.html -->
+<section id="password">
+    <h2>Accès protégé par mot de passe</h2>
+    <input type="password" id="passwordInput" placeholder="Entrez le mot de passe">
+    <button onclick="checkPassword()">Entrer</button>
+    <p id="passwordMessage"></p>
+</section>
     
     <div id="logo"><img src="img/Sabrina (8).png" alt="logo Sabrina & Aurélien" width="150" height="auto"></div>
 
@@ -141,7 +142,7 @@
                                 </div>
                                 <div class="input-control">
                                     <input type="number" min="0" required placeholder="Combien serez-vous?">
-                                    <input type="number" min="0" required placeholder="Nombre d'enfants">
+                                    <input type="number" min="0" required placeholder="Dont nombre d'enfants?">
                                     <label for="presence-dimanche" id="brunch">Présence le dimanche :</label>
                                     <select id="dimanche" name="presence-dimanche" required>
                                         <option value="oui">Oui</option>

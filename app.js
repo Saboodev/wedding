@@ -10,7 +10,6 @@
     });
 })();
 
-// Ajoutez cette fonction dans votre app.js
 function checkPassword() {
     var passwordInput = document.getElementById("passwordInput").value;
     var correctPassword = "0510";
@@ -25,7 +24,6 @@ function checkPassword() {
         document.getElementById("passwordMessage").textContent = "Mot de passe incorrect. Veuillez réessayer.";
     }
 }
-
 
 // Ajoutez cette fonction pour gérer le menu burger
 function toggleMenu() {
