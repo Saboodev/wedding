@@ -13,9 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Italiana&family=Italianno&family=Lugrasimo&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
@@ -134,9 +132,9 @@
                                     <input type="text" name="first name" required placeholder="Prénom">
                                 </div>
                                 <div class="input-control">
-                                    <input type="number" min="0" required placeholder="Combien serez-vous?">
-                                    <input type="number" min="0" required placeholder="Nombre d'enfants">
-                                    <label for="presence-dimanche" id="brunch">Présence le dimanche :</label>
+                                    <input type="number" name="Nombre-invité" min="0" required placeholder="Combien serez-vous?">
+                                    <input type="number" name="nombre-enfant" min="0" required placeholder="Dont nombre d'enfants">
+                                    <label for="dimanche" id="brunch">Présence le dimanche :</label>
                                     <select id="dimanche" name="presence-dimanche" required>
                                         <option value="oui">Oui</option>
                                         <option value="non">Non</option>
@@ -146,9 +144,10 @@
                                     <textarea name="message" id="msg" cols="15" rows="8" placeholder="Préciser âge des enfants ou un petit mot..."></textarea>
                                 </div>
                                 <div class="submit-btn">
-                                    <a href="#" class="main-btn">
+                                    <a href="#reponse" class="main-btn">
                                         <input type="hidden" name="_next" value="https://saboodev.github.io/wedding/">
                                         <input type="hidden" name="_template" value="basic">
+                                        <input type="hidden" name="_captcha" value="false">
                                         <button type="submit" value="submit" class="btn btn-primary animated-link">Envoyer</button>                                
                                     </a>
                                 </div>
