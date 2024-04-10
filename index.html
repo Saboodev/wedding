@@ -18,6 +18,13 @@
 
 <body>
 
+    <!-- <section id="password">
+        <h2>Accès protégé par mot de passe</h2>
+        <input type="password" id="passwordInput" placeholder="Entrez le mot de passe">
+        <button onclick="checkPassword()">Entrer</button>
+        <p id="passwordMessage"></p>
+    </section> -->
+
     <div id="logo"><img src="img/Sabrina (8).png" alt="logo Sabrina & Aurélien" width="150" height="auto"></div>
 
     <div class="menu-toggle" onclick="toggleMenu()">
@@ -128,14 +135,14 @@
                             <form action="https://formsubmit.co/sabrina355@hotmail.fr" method="POST" enctype="multipart/form-data">
                                 <div class="input-control info">
                                     <input type="hidden" name="_subject" value="Un invité a répondu!">
-                                    <input type="text" name="name" required placeholder="Nom">
-                                    <input type="text" name="first name" required placeholder="Prénom">
+                                    <input type="text" name="nom" required placeholder="Nom">
+                                    <input type="text" name="prénom" required placeholder="Prénom">
                                 </div>
                                 <div class="input-control">
                                     <input type="number" name="Nombre-invité" min="0" required placeholder="Combien serez-vous?">
                                     <input type="number" name="nombre-enfant" min="0" required placeholder="Dont nombre d'enfants">
                                     <label for="dimanche" id="brunch">Présence le dimanche :</label>
-                                    <select id="dimanche" name="presence-dimanche" required>
+                                    <select id="dimanche" name="dimanche" required>
                                         <option value="oui">Oui</option>
                                         <option value="non">Non</option>
                                     </select>

@@ -10,7 +10,7 @@ function checkPassword() {
         setTimeout(function() {
             console.log("Redirection vers index.html");
             window.location.href = "index.html"; // Redirigez vers la page principale
-        }, 6000); // Redirige après 2 secondes (2000 millisecondes)
+        }, 2000); // Redirige après 2 secondes (2000 millisecondes)
     } else {
         console.log("Mot de passe incorrect");
         document.getElementById("passwordMessage").textContent = "Mot de passe incorrect. Veuillez réessayer.";
