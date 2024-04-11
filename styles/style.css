@@ -27,46 +27,6 @@ body {
     width: 100vw; /* La largeur de la page est égale à 100% de la largeur de la fenêtre du navigateur */
 }
 
-#password {  
-    position: fixed; /* Fixez la section en haut de la page */
-    top: 0; /* Alignez la section en haut de la page */
-    left: 0; /* Alignez la section à gauche de la page */
-    width: 100%; /* Occupez toute la largeur de la page */
-    height: 100%; /* Occupez toute la hauteur de la page */
-    background: url("../img/page-acces.png");
-    background-size: cover; /* Réglez la taille de l'image de fond pour qu'elle remplisse la zone de la section */
-    display: flex; 
-    justify-content: center; /* Centrez le contenu horizontalement */
-    align-items: center; /* Centrez le contenu verticalement */
-    z-index: 9999;   
-    padding: 0 20px; /* Ajoutez un peu d'espace sur les côtés pour les écrans plus petits */
-    box-sizing: border-box; 
-    input {
-        width: 30%;
-    }
-    button {
-        border-radius: 30px;
-        font-weight: 400;
-        color: var(--color-white);
-        text-decoration: none;
-        background-color: var(--green-2);
-        opacity: 0.8;
-        display: flex;
-        font-size: 1.5rem;
-        padding: .8rem 1.1rem;
-        border: none;
-        resize: none;
-        padding: 10px;
-    }
-}
-
-
-/* #password input {
-    width: 100%; 
-    padding: 10px; 
-    margin-bottom: 10px; 
-} */
-
 #logo{
     text-align: center;
 }
@@ -388,13 +348,6 @@ footer {
 
 /* Pour les appareils de taille moyenne */
 @media screen and (max-width: 768px) {
-    #password {
-        padding: 0 10px; 
-        /* background: url("../img/page-acces-tel.png"); */
-        flex-direction: column;
-        background-size: auto; /* Utilisez la taille d'arrière-plan par défaut */
-    }
-
     #logo {
         padding-top: 3rem;
     }
