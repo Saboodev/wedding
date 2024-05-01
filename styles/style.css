@@ -21,7 +21,7 @@ body {
     padding: 0;
     background: url("../img/Saboo.png") no-repeat fixed center/cover;
     background-size: cover;
-    background-position: inherit; /* Déplacer l'image vers le haut */
+    background-position: top; /* Déplacer l'image vers le haut */
     background-attachment: fixed; /* Fixe l'image de fond à la position de la fenêtre du navigateur */
     height: 100vh; /* La hauteur de la page est égale à 100% de la hauteur de la fenêtre du navigateur */
     width: 100vw; /* La largeur de la page est égale à 100% de la largeur de la fenêtre du navigateur */
@@ -310,7 +310,7 @@ input, textarea {
       }
 }
 
-#galerie, #hebergement{
+#galerie, #hebergement, #archive{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -325,6 +325,12 @@ input, textarea {
 #file{
     display: flex;
     border-radius: 15px;
+}
+
+.img_archieve {
+    width: 100%;
+    border-radius: 30px;
+    margin: 2rem auto;
 }
 
 footer {
